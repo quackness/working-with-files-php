@@ -21,22 +21,26 @@
 
 //3. write to files 
 // check the path is correct: $filename = 'library.csv' and add read, I checked and it was fine ;
-$f = fopen('library.csv', 'r');
-$entries = [];
-while(($entry = fgetcsv($f)) != null) {
-  if (trim($entry[1]) == 'Charles Dickens') {
-    $entries[] = $entry;
-  }
+// $f = fopen('library.csv', 'r');
+// $entries = [];
+// while(($entry = fgetcsv($f)) != null) {
+//   if (trim($entry[1]) == 'Charles Dickens') {
+//     $entries[] = $entry;
+//   }
 
-}
-fclose($f);
+// }
+// fclose($f);
 
-$dest = fopen('./dickens_books.csv', 'w');
-foreach($entries as $entry) {
-  fputcsv($dest, $entry);
-}
+// $dest = fopen('./dickens_books.csv', 'w');
+// foreach($entries as $entry) {
+//   fputcsv($dest, $entry);
+// }
 
-fclose($dest);
+// fclose($dest);
+
+//4 delete files, use unlink();
+
+
 
 
 ?>
