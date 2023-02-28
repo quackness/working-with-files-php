@@ -3,8 +3,9 @@
 
     $filename = '../../../books/Charles Dickens/Great Expectations.txt';
 
-    $info['last accessed'] = new DateTime('@'.fileatime($filename));
-    $info['last modified'] = new DateTime('@'.filemtime($filename));
+    $info['last accessed'] = new DateTime(fileatime($filename));
+    $info['last modified'] = new DateTime(filemtime($filename));
+    $info['last modified'] = date('@'.filemtime($filename));
     $info['size (B)'] = filesize($filename);
     $info['type'] = filetype($filename);
     $info['readable?'] = is_readable($filename);
