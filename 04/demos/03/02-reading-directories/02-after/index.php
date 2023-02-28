@@ -26,7 +26,7 @@
 
 
     list($option) = fscanf(STDIN, "%d\n");
-    list($author, $title) = $library[$option];
+    list($author, $title) = $library[$option-1];
 
     $filename = "$root/$author/$title.txt"; 
     $f = fopen($filename, 'r');
