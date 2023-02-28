@@ -1,6 +1,6 @@
 <?php
-    $filename = '../../../books/Charles Dickens/A Christmas Carol.txt';
-    // $filename = '/Users/karolinadubaj/Great Expectations.txt';
+    // $filename = '../../../books/Charles Dickens/A Christmas Carol.txt';
+    $filename = '/Users/karolinadubaj/Great Expectations.txt';
 
     function getPermissionInfo($filename) {
         return [
