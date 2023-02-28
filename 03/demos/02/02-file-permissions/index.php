@@ -10,9 +10,9 @@
         ];
     }
 
-    var_dump(getPermissionInfo($filename));
+    // var_dump(getPermissionInfo($filename));
 
-    chmod($filename, 0640);
+    // chmod($filename, 0751);
 
     var_dump(getPermissionInfo($filename));
 
