@@ -34,3 +34,5 @@
     ?>
 </body>
 </html>
+
+<!-- to be reviewed, I am getting the error when submitting the form -->
