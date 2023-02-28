@@ -1,9 +1,11 @@
 <?php
+//returns a current working directory your program is using 
     $dir = getcwd();
+    // echo $dir;
 
     $fmt = "%s: %g\n";
-
-    echo sprintf($fmt, 'CWD', $dir);
+//sprintf — Return a formatted string
+    echo sprintf("%s: %s\n", 'CWD', $dir);
     echo sprintf($fmt, 'Free space', disk_free_space($dir));
     echo sprintf($fmt, 'Total space', disk_total_space($dir));
 
